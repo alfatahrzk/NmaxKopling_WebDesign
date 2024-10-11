@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <!--Page Title-->
+    <title>Crab Security</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+    <!--Logo Perusahaan-->
+    <link rel="shortcut icon" href="images/crab-logo.png" title="Favicon"/>
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="css/namari-color.css">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Function JS -->
+    
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <img src="images/crab(1).png" alt="preloader-logo">
+    </div>
+</div>
+<!--End of Preloader-->
+
+
+
+<div id="wrapper">
+
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
+
+                    <!--Logo-->
+                    <div id="logo">
+
+                        <!--Logo that is shown on the banner-->
+                        <img src="images/crab-logo.png" id="banner-logo" alt="Landing Page"/>
+                        <!--End of Banner Logo-->
+
+                        <!--The Logo that is shown on the sticky Navigation Bar-->
+                        <img src="images/crab-logo.png" id="navigation-logo" alt="Landing Page"/>
+                        <!--End of Navigation Logo-->
+
+                    </div>
+                    <!--End of Logo-->
+
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+                            <li>
+                                <a href="#banner">Beranda</a>
+                            </li>
+                            <li>
+                                <a href="#tentang-kami">Tentang</a>
+                            </li>
+                            <li>
+                                <a href="#pengecekan">Cek Rekening</a>
+                            </li>
+                        </ul>
+                        <a href="form.html" class="laporkan"><button>LAPORKAN</button></a>
+                        
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div><!--End of Header-->
+
+        <!--Banner Content-->
+        <div id="banner-content" class="row clearfix">
+
+            <div class="col-38">
+
+                <div class="section-heading">
+                    <h1>KEJAHATAN SIBER MENGINTAI</h1>
+                    <h2>Pepatah mengatakan "Sedia payung sebelum hujan" yang berarti kita harus bersiap diri menghadapi ancaman kejahatan siber sebelum menjadi korban.</h2>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+
+
+        <!--Ciri password-->
+        <section id="ciri-password" class="introduction scrollto">
+
+            <div class="row clearfix">
+
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h2 class="section-title">Ciri Password yang Kuat</h2>
+                        <p class="section-subtitle">Password yang kuat adalah kunci keamanan akunmu. Jangan sepelehkan!</p>
+                    </div>
+
+                </div>
+
+                <div class="col-2-3">
+
+                    <!--Icon Block-->
+                    <div class="col-1 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Panjang & Kompleks</h4>
+                            <p>Semakin panjang password, semakin sulit dipecahkan. Kombinasikan huruf besar, huruf kecil, angka, dan simbol.</p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                    <!--Icon Block-->
+                        <div class="col-1 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                        <!--Icon Block Description-->
+                <div class="icon-block-description">
+                    <h4>Sulit ditebak</h4>
+                    <p>Hindari informasi pribadi seperti tanggal lahir, nama hewan peliharaan, atau kata-kata umum.</p>
+                </div>
+            </div>
+            <!--End of Icon Block-->
+
+            <!--Icon Block-->
+            <div class="col-1 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                <!--Icon Block Description-->
+                <div class="icon-block-description">
+                    <h4>Tidak Berpola</h4>
+                    <p>Jangan gunakan pola yang mudah ditebak seperti tanggal atau urutan keyboard</p>
+                </div>
+            </div>
+            <!--End of Icon Block-->
+
+            <!--Icon Block-->
+            <div class="col-1 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                <!--Icon Block Description-->
+                <div class="icon-block-description">
+                    <h4>Sulit dipecahkan oleh program</h4>
+                    <p>Hindari kata-kata yang ada di kamus atau frasa yang umum.</p>
+                </div>
+            </div>
+            <!--End of Icon Block-->
+
+        </div>
+
+    </div>
+
+
+</section>
+<!--End of Ciri password-->
+
+
+        <!--Grafik & pengecekan-->
+        <div class="container" id="pengecekan">
+            <div class="content">
+                <div class="column">
+                    <canvas id="myChart"></canvas>
+                </div>
+    
+                <div class="column">
+                    <div class="form-group">
+                        <h2>Cek Rekening</h2>
+                        <input type="text" id="input1" name="cekRekening">
+                        <button type="button" onclick="cekRekening()">Cek Rekening</button>
+                        <p id="hasilCek"></p>
+                    </div>
+    
+                    <div class="form-group">
+                        <h2>Cek Password</h2>
+                        <input type="password" id="input2" name="cekPassword">
+                        <button type="button" onclick="cekPassword()">Cek Password</button>
+                        <p>*Disclaimer: kami tidak menyimpan password kalian</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Grafik & pengecekan-->
+
+
+        
+
+        <!--Tentang kami-->
+        <div class="container" id="tentang-kami">
+            <div class="section-heading">
+                <h2><b>Tentang kami</b></h2>
+                <p> Selamat datang di MR. Crime, platform edukasi yang berdedikasi untuk meningkatkan kesadaran dan keamanan di dunia siber. Kami memahami bahwa kejahatan siber semakin meningkat, dan kami berkomitmen untuk memberikan informasi serta alat yang dibutuhkan untuk melindungi diri Anda. Di MR. Crime, kami menawarkan berbagai fitur yang dirancang untuk membantu Anda: </p>
+                <ul class="tentang-kami">
+                    <li>
+                        <p>Laporkan Kejahatan Siber: Temukan tempat yang aman untuk melaporkan tindakan kejahatan siber yang Anda alami atau saksikan. Tim kami siap membantu Anda menanggapi situasi tersebut dengan tepat.</p>
+                    </li>
+                    <li>
+                        <p>Cek Rekening: Verifikasi keamanan rekening Anda dengan alat kami yang membantu mendeteksi aktivitas mencurigakan. Pastikan informasi keuangan Anda tetap aman.</p>
+                    </li>
+                    <li>
+                        <p>Cek Kekuatan Password: Gunakan fitur ini untuk mengevaluasi kekuatan password Anda. Kami menyediakan tips untuk membuat password yang lebih kuat dan aman.</p>
+                    </li>
+                    <li>
+                        <p>Kami percaya bahwa dengan pengetahuan dan alat yang tepat, setiap orang dapat melindungi diri dari ancaman siber. Bergabunglah bersama kami untuk menciptakan lingkungan online yang lebih aman!</p>
+                    </li>
+                </ul>         
+            </div>
+        </div>
+
+        <!--Quotes-->
+        <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
+
+            <div class="row clearfix">
+
+                <div class="section-heading">
+                    <h3>Kutipan</h3>
+                    <h2 class="section-title">Beberapa kutipan dari tokoh teknologi</h2>
+                </div>
+
+                <!--Tokoh-->
+                <blockquote class="col-3 testimonial classic">
+                    <img src="images/Mueller.jpg" alt="User"/>
+                    <q>Computer hackers do not need to know each other’s real names, or even live on the same continent, to steal millions in mere hours.</q>
+                    <footer>Robert Mueller
+                    </footer>
+                </blockquote>
+                <!-- End of Tokoh-->
+
+                <!--Tokoh 2-->
+                <blockquote class="col-3 testimonial classic">
+                    <img src="images/Naskar.jpg" alt="User"/>
+                    <q>No technology that’s connected to the internet is unhackable.</q>
+                    <footer>Abhijit Naskar
+                    </footer>
+                </blockquote>
+                <!-- End of Tokoh 2-->
+
+                <!--User Tokoh 3-->
+                <blockquote class="col-3 testimonial classic">
+                    <img src="images/Dan.png" alt="User"/>
+                    <q>If security were all that mattered, computers would never be turned on, let alone hooked into a network with literally millions of potential intruders</q>
+                    <footer>Dan Farmer</footer>
+                </blockquote>
+                <!-- End of Tokoh 3-->
+
+            </div>
+
+        </aside>
+        <!--End of Quotes-->
+
+
+    </main>
+    <!--End Main Content Area-->
+
+
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+        <div class="row clearfix">
+
+            <p id="copyright" class="col-2">Made by team Nmax Kopling SI Unesa</p>
+
+            <!--Social Icons in Footer-->
+            <ul class="col-2 social-icons">
+                <li>
+                    <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
+                        <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+                        <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                    </a>
+                </li>
+            </ul>
+            <!--End of Social Icons in Footer-->
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+</div>
+<!-- Include JavaScript resources -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/jquery.1.8.3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/featherlight.min.js"></script>
+<script src="js/jquery.enllax.min.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.stickyNavbar.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/images-loaded.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
